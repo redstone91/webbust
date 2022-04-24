@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Дипломка</title>
+	<meta name="viewport"
+		content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/task.css">
+</head>
+
+<body>
+	<header class="header" id="header">
+		<div class="container">
+			<div class="catalog-card">
+			</div>
+		</div>
+	</header>
+
+	<div class="modal">
+		<div class="modal__content">
+			<form id="application" class="modal__form" action="mail.php" method="POST" name="application">
+				<input name="name" placeholder="Укажите ваше имя:" value="" class="name" required />
+				<input name="tel" placeholder="Укажите ваш телефон:" class="tel" type="tel" required />
+				<input name="email" placeholder="Укажите ваш Email:" class="email" type="email" required />
+				<input name="product" placeholder="Название товара:" class="product" type="text" />
+				<button class="applicationButton" type="submit" form="application">Отправить</button>
+			</form>
+			<span class="modal__close"> close </span>
+		</div>
+	</div>
+
+
+	<script src="js/jquery-3.5.1.min.js"></script>
+	<script src="js/data.js"></script>
+	<script src="js/script.js"></script>
+</body>
+
+</html>
